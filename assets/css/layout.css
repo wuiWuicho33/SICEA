@@ -1,0 +1,347 @@
+/*::::::::::::::::::::::
+:::::::::LAYOUT:::::::::
+::::::::::::::::::::::*/
+@charset "utf-8";
+
+/* Imported files and fonts
+----------------------------------------------------------- */
+@import url("font-awesome/fontawesome-all.css");
+@import url("styles.css");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+
+/* Top Bar
+----------------------------------------------------------- */
+#topbar{padding:5px 0; font-size:12px;}
+#topbar .fl_left{margin-top:4px;}
+#topbar .fl_left .inline > li i{margin:0 5px 0 0; line-height:normal;}
+#topbar .faico li{margin:0;}
+
+/* Header
+----------------------------------------------------------- */
+#header{padding:30px 0;}
+#header #logo img {width:auto;}
+#header #quickinfo{margin-top:10px;}
+
+
+/* Button
+----------------------------------------------------------- */
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius:6px;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+/* Banner
+----------------------------------------------------------- */
+.banner {padding: 80px 0}
+
+/* Faico
+----------------------------------------------------------- */
+.faico{margin:0; padding:0; list-style:none;}
+.faico li{display:inline-block; float:left; margin:0 2px 0 0; padding:0; line-height:normal;}
+.faico li:last-child{margin-right:0;}
+
+.faico a{display:inline-block; width:30px; height:30px; line-height:30px; font-size:14px; text-align:center;}
+.faico a{color:inherit; background-color:transparent;}
+
+.faicon-dribble:hover{color:#EA4C89;}
+.faicon-facebook:hover{color:#3B5998;}
+.faicon-google-plus:hover{color:#DB4A39;}
+.faicon-linkedin:hover{color:#0E76A8;}
+.faicon-pinterest:hover{color:#C8232C;}
+.faicon-rss:hover{color:#EE802F;}
+.faicon-twitter:hover{color:#00ACEE;}
+
+/* Showcase
+----------------------------------------------------------- */
+.showcase .showcase-text {padding: 3rem;}
+.showcase .showcase-img {
+  min-height: 35rem;
+  background-size: cover; }
+
+/* 404 Page Styles
+----------------------------------------------------------- */
+.error-404 {font-size: 100px;}
+
+/* Pricing Page Styles
+----------------------------------------------------------- */
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer
+----------------------------------------------------------- */
+
+
+/* Copyright
+----------------------------------------------------------- */
+#copyright *{margin:0; padding:0;}
+
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+
+/* Navigation
+----------------------------------------------------------- */
+/*navbar-imgbrand*/
+@media screen and (max-width:770px){
+.navbar-imgbrand .navbar-header {
+    padding: 0px 0 30px 0;
+}
+}
+.navbar-imgbrand .navbar-brand {
+  padding:0px;
+}
+.navbar-imgbrand .navbar-brand>img {
+  width: 150px;
+  height: auto;
+  padding: 15px; 
+}
+.navbar-imgbrand .navbar-toggle {
+  margin-top: 25px;
+  margin-bottom:0px;
+}
+@media (min-width: 768px) {
+    .navbar-imgbrand .navbar-nav > li > a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+  .navbar-imgbrand .navbar-brand>img {
+      width: 150px;
+    }
+}
+
+/*navbar-custom*/
+.navbar-custom {
+  background-color: #212529;
+  border:none;
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+.navbar-custom .navbar-brand {
+  color:#449BDB;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #79C7D9;
+  background-color: transparent;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #ffffff;
+  font-size:16px;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #D4A349;
+  background-color: transparent;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+.navbar-custom .navbar-toggle {
+  border-color:#449BDB;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #CDEDFF;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color:#449BDB;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color:#449BDB;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  color:#ffffff;
+  background-color:transparent;
+}
+
+
+.navbar-custom-two {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 15%, rgba(9,9,121,1) 100%, rgba(0,212,255,1) 100%);
+  border:none;
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+.navbar-custom-two .navbar-nav a{
+  font-size:10px;
+  color:#ffffff !important;
+}
+
+
+@media (max-width: 767px) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color:#449BDB;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color:#79C7D9;
+    background-color: transparent;
+  }
+}
+
+/* Quick-links
+----------------------------------------------------------- */
+.quick-links{margin:0; padding:0; list-style:none;}
+.quick-links li{display:inline-block; margin:8px 5px 0 0; padding:0; line-height:normal;}
+.quick-links li:last-child{margin-right:0;}
+.quick-links a{display:inline-block; font-size:inherit; text-align:center; padding: 5px 8px; font-weight: bold;}
+
+.quick-links a{color:#888888; background-color:#333333;}
+.quick-links a:hover{color:#FFFFFF; background-color:#337ab7;}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #9d2449;
+  background-color: rgba(157, 36, 73, 0.5);
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.carousel-indicators .active {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  background-color: #fff;
+}
+
+/* Breadcrumb
+----------------------------------------------------------- */
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  background-color:inherit;
+}
+.breadcrumb li {
+  font-size:18px;
+  color:#545454;
+}
+.breadcrumb li a {color:#545454;}
+.breadcrumb li:last-child {font-weight:bold;}
+
+/* Box
+----------------------------------------------------------- */
+.box{
+  background-color:#E5F9FF;
+  border:1px solid #3D6FAD;
+  border-radius:15px;
+}
+
+.box-status{
+  display:block;
+  background-color:orange;
+  width:10px;
+  height:10px;
+}
+
+/* Pagination
+----------------------------------------------------------- */
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    color: #fff;
+    background-color: #9d2449;
+    border-color: #9d2449;
+}
+.pagination > li > a, .pagination > li > span {
+    color: #9d2449;
+}
+
+/* navbar-form
+----------------------------------------------------------- */
+.navbar-form {
+  padding: 10px 0px;
+}
+
+@media (min-width: 768px)
+.nav-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0;
+}
+
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+/* -------------------------------------------------------- */
+
+/* Media Queries
+----------------------------------------------------------- */
+@-ms-viewport{width:device-width;}
+
+/* ===========================================================
+Desk devices: Max width 900px
+=========================================================== */
+@media screen and (max-width:900px){
+	#topbar{}
+  #copyright{}
+	#copyright p:first-of-type{margin-bottom:10px;}
+}
+
+/* ===========================================================
+Tablet devices: Max width 750px
+=========================================================== */
+@media (min-width: 768px) {
+  .showcase .showcase-text {padding: 7rem;} 
+}
+
+@media screen and (max-width:750px){
+	#topbar{text-align:center;}
+	#topbar *{margin:0;}
+	#topbar .fl_left ul{margin:0 0 10px 0; line-height:normal;}
+	#topbar .fl_left ul li{display:inline-block; margin-right:20px;}
+	#topbar .fl_left ul li:last-child{margin-right:0;}
+	#topbar .faico li{float:none;}
+  #header{text-align:center;}
+  #header #logo{margin:0 0 30px 0;}
+  .navbar-header {padding: 0px 0 35px 0;}
+  .carousel .carousel {height: 70%;}
+}
+
+/* ============================================================
+Mobile devices: Max width 450px
+============================================================ */
+@media screen and (max-width:450px){
+	#topbar .fl_left ul li{display:block; margin:5px 0 0 0;}
+	#topbar .fl_left ul li:first-child{margin:0;}
+}
+ 
+/* Tablets en horizonal y escritorios normales
+@media (min-width: 768px) and (max-width: 1199px) { ... }*/
+
+/* Móviles en horizontal o tablets en vertical
+@media (max-width: 767px) { ... }*/
+
+/* Móviles en vertical 
+@media (max-width: 480px) { ... }*/
+
+

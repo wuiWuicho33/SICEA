@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!--===========================================================
+/// START DOC.HTML ///
+============================================================-->
+<html lang="en">  
+<!--===========================================================
+/// START HEAD ///
+============================================================-->
+<head>
+  <!--//////////
+  Metadata
+  ///////////-->       
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <!-- responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El portal único del gobierno</title>
+  <link rel="shorcut icon" href="../assets/img/favicon.png"/>
+  <!--//////////
+  STYLESHEETS
+  ///////////-->  
+  <link href="../assets/css/bootstrap.css" rel="stylesheet">
+  <link href="../assets/css/layout.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<!--=======
+END HEAD
+========-->
+<!--==========================================================
+/// START BODY ///
+===========================================================-->
+<body>
+
+  <!-- Navigation
+  ================================================== -->
+  <nav class="navbar navbar-default navbar-custom navbar-imgbrand" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/img/logo.svg" alt="Gobierno de México">
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">Formularios no acreditados</a>
+          </li>
+          <li>
+            <a href="#">Secciones a escala</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Trámites<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </li>
+          <li><a href="#" target="_blank"><i class="fas fa-search"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+    <!-- Breadcrumb
+  ================================================== -->
+  <div class="bg-default py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ol class="breadcrumb">
+            <li><i class="fas fa-home"></i></li>
+            <li><a href="#">Inicio</a></li>
+            <li>Consulta la base de datos del SICEAN</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Content
+  ================================================== -->
+  <div class="bg-default py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1>Consulta la base de datos del SICEAN</h1>
+          <p>Inscripción de títulos de aguas nacionales y sus biene únicos inherentes.</p>
+        </div>
+        <div class="col-lg-12 text-center box">
+          <img src="../assets/img/logo-sicean.png" style="width:500px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Page Content
+  ================================================== -->
+  <div class="bg-default py-5">
+    <section class="container">  
+      <!-- Feature section -->
+      <div class="row">
+        <div class="col-md-4">
+          <h3>Búsqueda de trámites.</h3>
+          <form action="GET" class="navbar-form navbar-left" role="search" id="form">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Buscar" id="inputSearch">
+            </div>
+            <button type="submit" class="btn btn-primary">
+              <span class="glyphicon glyphicon-search" id="buttonSearch"></span>
+            </button>
+          </form><br>
+          <a href="#" class="second">Búsqueda avanzada</a>
+        </div>
+        <div class="col-md-8">
+          <p>Tu búsqueda se llevará a cabo en todo SICEAN, si desea realizar la búsqueda en una dependencia en particular, haz clic en búsqueda avanzada.</p>
+          <!-- Tabs -->
+          <ul id="myTab" class="nav nav-tabs nav-justified">
+              <li class="active">
+                  <a href="#Servicio-one" data-toggle="tab">Todo</a>
+              </li>
+              <li class="">
+                <a href="#Servicio-two" data-toggle="tab">Trámites</a>
+              </li>
+              <li class="">
+                <a href="#Servicio-three" data-toggle="tab">Gobierno</a>
+              </li>
+              <li class="">
+                <a href="#Servicio-four" data-toggle="tab">Apps</a>
+              </li>
+              <li class="">
+                <a href="#Servicio-five" data-toggle="tab">Datos abiertos</a>
+              </li>
+            </ul>
+            <div id="myTabContent" class="tab-content">
+              <div class="tab-pane fade active in" id="Servicio-one">
+                <p>...</p>
+              </div>
+              <div class="tab-pane fade" id="Servicio-two">
+                <p>...</p>
+              </div>
+              <div class="tab-pane fade" id="Servicio-three">
+                <p>...</p>
+              </div>
+              <div class="tab-pane fade" id="Servicio-four">
+                <p>...</p>
+              </div>
+              <div class="tab-pane fade" id="Servicio-five">
+                <p>...</p>
+              </div>              
+            </div>  
+      </div>
+    </section>
+  </div>
+
+  <!-- Page Content
+  ================================================== -->
+  <div class="bg-default py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+
+        <div class="table-responsive">
+            <table class="table table-bordered table-condensed t-shadown" id="table">
+              <thead>
+                <tr class="active thead">
+                    <th>&nbsp;</th>
+                    <th><i class="fas fa-flag"></i></th>
+                    <th>Número de expediente</th>
+                    <th>Cuenca</th>
+                    <th>Certificación de título</th>
+                    <th>Volumen de extracción</th>
+                    <th>Permiso de explotación</th>
+                    <th>Dictamen de alta repda</th>
+                    <th>Titular</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><i class="fas fa-flag"></i></td>
+                    <td>45764</td>
+                    <td>1</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Si</td>
+                    <td>Si</td>
+                    <td><a href="user-sheet-01.html" class="second">Maira</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><i class="fas fa-flag"></i></td>
+                    <td>324</td>
+                    <td>1</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Si</td>
+                    <td>Si</td>
+                    <td><a href="user-sheet-01.html" class="second">Maira</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><i class="fas fa-flag"></i></td>
+                    <td>457</td>
+                    <td>1</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Si</td>
+                    <td>Si</td>
+                    <td><a href="user-sheet-01.html" class="second">Maira</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><i class="fas fa-flag"></i></td>
+                    <td>2345</td>
+                    <td>1</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Si</td>
+                    <td>Si</td>
+                    <td><a href="user-sheet-01.html" class="second">Maira</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><i class="fas fa-flag"></i></td>
+                    <td>56798</td>
+                    <td>1</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Si</td>
+                    <td>Si</td>
+                    <td><a href="user-sheet-01.html" class="second">Maira</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><i class="fas fa-flag"></i></td>
+                    <td>234</td>
+                    <td>1</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Si</td>
+                    <td>Si</td>
+                    <td><a href="user-sheet-01.html" class="second">Maira</a></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><i class="fas fa-flag"></i></td>
+                    <td>234</td>
+                    <td>1</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Si</td>
+                    <td>Si</td>
+                    <td><a href="user-sheet-01.html" class="second">Maira</a></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td><i class="fas fa-flag"></i></td>
+                    <td>567</td>
+                    <td>1</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Si</td>
+                    <td>Si</td>
+                    <td><a href="user-sheet-01.html" class="second">Maira</a></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td><i class="fas fa-flag"></i></td>
+                    <td>7890</td>
+                    <td>1</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Si</td>
+                    <td>Si</td>
+                    <td><a href="user-sheet-01.html" class="second">Maira</a></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td><i class="fas fa-flag"></i></td>
+                    <td>435</td>
+                    <td>1</td>
+                    <td>Lorem</td>
+                    <td>Lorem</td>
+                    <td>Si</td>
+                    <td>Si</td>
+                    <td><a href="user-sheet-01.html" class="second">Maira</a></td>
+                </tr>                                                      
+              </tbody>
+            </table>   
+        </div>
+        <!-- Pagination -->
+        <div class="row text-right">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li><a href="#">&laquo;</a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">&raquo;</a></li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer
+  ================================================== -->
+  <div class="bg-primary">
+    <footer class="bg-primary py-5 footer-pleca" id="footer">
+      <div class="container">
+        <div class="col-md-3">
+          <img src="../assets/img/logofooter.png">
+        </div>
+        <div class="col-md-3">
+          <h5>Enlaces</h5>
+          <a href="https://www.participa.gob.mx/" target="_blank">Participa</a><br>
+          <a href="https://www.gob.mx/publicaciones" target="_blank">Publicaciones Oficiales</a><br>
+          <a href="http://www.ordenjuridico.gob.mx/" target="_blank">Marco Jurídico</a><br>
+          <a href="https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/" target="_blank">Plataforma Nacional de Transparencia</a>
+        </div>
+        <div class="col-md-3">
+          <h5>¿Qué es gob.mx?</h5>
+          <p>Es el portal único de trámites, información y participación ciudadana. <a href="https://www.gob.mx/que-es-gobmx" target="_blank" style="text-decoration:underline;">Leer más</a></p>
+          <a href="https://datos.gob.mx/" target="_blank">Portal de datos abiertos</a><br>
+          <a href="https://www.gob.mx/accesibilidad" target="_blank">Declaración de accesibilidad</a><br>
+          <a href="https://www.gob.mx/aviso_de_privacidad" target="_blank">Aviso de privacidad integral</a><br>
+          <a href="https://www.gob.mx/privacidadsimplificado" target="_blank">Aviso de privacidad simplificado</a><br>
+          <a href="https://www.gob.mx/terminos" target="_blank">Términos y condiciones</a><br>
+          <a href="https://www.gob.mx/terminos#medidas-seguridad-informacion" target="_blank">Política de seguridad</a><br>
+          <a href="https://www.gob.mx/sitemap" target="_blank">Mapa del sitio</a><br> <br>                 
+        </div>
+        <div class="col-md-3">
+         <a href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54" target="_blank" style="text-decoration:underline;">Denuncia contra servidores públicos</a><br><br>  
+         <p>Síguenos en:</p>
+         <a href="https://www.facebook.com/gobmexico/" target="_blank">
+           <i class="fab fa-facebook-f font-x3"></i>&nbsp;
+         </a>
+         <a href="https://twitter.com/GobiernoMX" target="_blank">
+           <i class="fab fa-twitter font-x3"></i>
+         </a>
+       </div>            
+     </div>
+   </footer>
+
+   <img src="https://framework-gb.cdn.gob.mx/landing/img/pleca.svg">
+  </div>
+
+  <!--//////////
+  JAVASCRIPTS
+  ///////////-->
+  <!--Librery-->    
+  <script src="../assets/js/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="../assets/js/search.js"></script>
+  </body>   
+<!--========
+END BODY
+=========-->     
+</html>
+<!--=============
+FINISH DOC.HTML
+==============-->

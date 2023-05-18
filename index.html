@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!--===========================================================
+/// START DOC.HTML ///
+============================================================-->
+<html lang="en">  
+<!--===========================================================
+/// START HEAD ///
+============================================================-->
+<head>
+  <!--//////////
+  Metadata
+  ///////////-->       
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <!-- responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El portal único del gobierno</title>
+  <link rel="shorcut icon" href="assets/img/favicon.png"/>
+  <!--//////////
+  STYLESHEETS
+  ///////////-->  
+  <link href="assets/css/bootstrap.css" rel="stylesheet">
+  <link href="assets/css/layout.css" rel="stylesheet">
+</head>
+<!--=======
+END HEAD
+========-->
+<!--==========================================================
+/// START BODY ///
+===========================================================-->
+<body>
+
+  <!-- Navigation
+  ================================================== -->
+  <nav class="navbar navbar-default navbar-custom navbar-imgbrand" role="navigation">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/img/logo.svg" alt="Gobierno de México">
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Trámites<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Gobierno</a>
+          </li>
+          <li><a href="#" target="_blank"><i class="fas fa-search"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel
+  ================================================== -->
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <!-- Indicadores -->
+    <ol class="carousel-indicators">
+      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+      <li data-target="#carousel-example-generic" data-slide-to="5"></li>                                               
+    </ol>
+    <!-- Contenedor para slide -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="assets/img/slider/01.png" alt="Lorem pixel">
+      </div>
+      <div class="item">
+        <img src="assets/img/slider/02.png" alt="Lorem pixel">
+      </div>
+      <div class="item">
+        <img src="assets/img/slider/03.png" alt="Lorem pixel">
+      </div>
+      <div class="item">
+        <img src="assets/img/slider/04.png" alt="Lorem pixel">
+      </div>
+      <div class="item">
+        <img src="assets/img/slider/05.png" alt="Lorem pixel">
+      </div>
+      <div class="item">
+        <img src="assets/img/slider/06.png" alt="Lorem pixel">
+      </div>                        
+    </div>
+    <!-- Controles -->
+    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </div>
+
+  <!-- Page Content
+  ================================================== -->
+  <div class="bg-default py-5">
+    <section class="container">  
+      <!-- Feature section -->
+      <div class="row">
+        <div class="col-md-6">
+          <img src="assets/img/logo-sicean.png" class="mb-2 img-responsive" alt="SICEAN">
+        </div>
+        <div class="col-md-6">
+          <form name="sentMessage" id="contactForm" role="form" novalidate>
+            <div class="row">
+              <div class="col-12">
+                <h2>Acceso</h2>
+                <p>Ingresa tu usuario y contraseña.</p><br>
+              </div>
+              <div class="control-group form-group col-12">
+                <div class="controls">
+                  <label>Usuario:</label>
+                  <input type="user" class="form-control" id="user" required data-validation-required-message="Ingresa tu nombre de usuario." placeholder="Nombre de usuario">
+                </div>    
+              </div>
+              <div class="control-group form-group col-12">
+                <div class="controls">
+                  <label>Contraseña:</label>
+                  <input type="password" class="form-control" id="password" required data-validation-required-message="Ingresa tu contraseña." placeholder="Ingresa tu contraseña">
+                  <!-- An element to toggle between password visibility -->
+                  <input type="checkbox" id="showPassInput">&nbsp; Mostrar contraseña
+                </div>    
+              </div>
+              <div class="clearfix"></div>
+              <div class="control-group form-group col-lg-12">
+                <div class="controls">
+                  <input type="hidden" name="save" value="contact">
+                  <button type="submit" class="btn btn-primary" id="loginButton">Ingresar ></button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer
+  ================================================== -->
+  <div class="bg-primary">
+    <footer class="bg-primary py-5 footer-pleca" id="footer">
+      <div class="container">
+        <div class="col-md-3">
+          <img src="assets/img/logofooter.png">
+        </div>
+        <div class="col-md-3">
+          <h5>Enlaces</h5>
+          <a href="https://www.participa.gob.mx/" target="_blank">Participa</a><br>
+          <a href="https://www.gob.mx/publicaciones" target="_blank">Publicaciones Oficiales</a><br>
+          <a href="http://www.ordenjuridico.gob.mx/" target="_blank">Marco Jurídico</a><br>
+          <a href="https://consultapublicamx.plataformadetransparencia.org.mx/vut-web/" target="_blank">Plataforma Nacional de Transparencia</a>
+        </div>
+        <div class="col-md-3">
+          <h5>¿Qué es gob.mx?</h5>
+          <p>Es el portal único de trámites, información y participación ciudadana. <a href="https://www.gob.mx/que-es-gobmx" target="_blank" style="text-decoration:underline;">Leer más</a></p>
+          <a href="https://datos.gob.mx/" target="_blank">Portal de datos abiertos</a><br>
+          <a href="https://www.gob.mx/accesibilidad" target="_blank">Declaración de accesibilidad</a><br>
+          <a href="https://www.gob.mx/aviso_de_privacidad" target="_blank">Aviso de privacidad integral</a><br>
+          <a href="https://www.gob.mx/privacidadsimplificado" target="_blank">Aviso de privacidad simplificado</a><br>
+          <a href="https://www.gob.mx/terminos" target="_blank">Términos y condiciones</a><br>
+          <a href="https://www.gob.mx/terminos#medidas-seguridad-informacion" target="_blank">Política de seguridad</a><br>
+          <a href="https://www.gob.mx/sitemap" target="_blank">Mapa del sitio</a><br> <br>                 
+        </div>
+        <div class="col-md-3">
+         <a href="https://www.gob.mx/tramites/ficha/presentacion-de-quejas-y-denuncias-en-la-sfp/SFP54" target="_blank" style="text-decoration:underline;">Denuncia contra servidores públicos</a><br><br>  
+         <p>Síguenos en:</p>
+         <a href="https://www.facebook.com/gobmexico/" target="_blank">
+           <i class="fab fa-facebook-f font-x3"></i>&nbsp;
+         </a>
+         <a href="https://twitter.com/GobiernoMX" target="_blank">
+           <i class="fab fa-twitter font-x3"></i>
+         </a>
+       </div>            
+     </div>
+   </footer>
+
+   <img src="https://framework-gb.cdn.gob.mx/landing/img/pleca.svg">
+  </div>
+
+  <!--//////////
+  JAVASCRIPTS
+  ///////////-->
+  <!--Librery-->    
+  <script src="assets/js/jquery.min.js"></script>
+  <!-- Bootstrap Core JavaScript -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- Plugin JavaScript -->
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>   
+<!--========
+END BODY
+=========-->     
+</html>
+<!--=============
+FINISH DOC.HTML
+==============-->
